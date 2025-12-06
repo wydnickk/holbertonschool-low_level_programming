@@ -7,13 +7,13 @@
  */
 int main(void)
 {
-    char c;
+	int i;
 
-    for (c = '0'; c <= '9'; c++)
-    {
-        putchar(c);
-    }
-    putchar('\n');
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d", i);
+	}
+	printf("\n");
 
-    return (0);
+	return (0);
 }
