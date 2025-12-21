@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _sqrt_helper - A helper function for _sqrt_recursion to find sqrt recursively.
- * @n: The number to find sqrt of.
- * @i: The test divisor (starts at 0 and increases).
- * 
- * Return: The natural sqrt or -1 if not found.
+ * _sqrt_helper - helps calculate the natural square root using recursion.
+ * @n: number to find the square root of
+ * @i: iterator, tests all possibilities
+ *
+ * Return: the natural square root, or -1 if not found
  */
 int _sqrt_helper(int n, int i)
 {
@@ -17,10 +17,10 @@ int _sqrt_helper(int n, int i)
 }
 
 /**
- * _sqrt_recursion - Returns the natural square root of n using recursion.
- * @n: Number to find sqrt of.
+ * _sqrt_recursion - Returns the natural square root of a number.
+ * @n: the number to calculate the square root of
  *
- * Return: The natural square root, or -1 if no natural root exists.
+ * Return: the natural square root, or -1 if it doesn't exist
  */
 int _sqrt_recursion(int n)
 {
