@@ -4,14 +4,17 @@
 
 /**
  * is_number - checks if a string consists only of digits
- * @s: string to check
+ * @s: the string to check
+ *
  * Return: 1 if only digits, 0 otherwise
  */
 int is_number(char *s)
 {
 	int i = 0;
+
 	if (!s[0])
 		return (0);
+
 	while (s[i])
 	{
 		if (!isdigit((unsigned char)s[i]))
@@ -25,6 +28,7 @@ int is_number(char *s)
  * main - adds positive numbers
  * @argc: argument count
  * @argv: argument vector
+ *
  * Return: 0 (success), 1 (error)
  */
 int main(int argc, char *argv[])
